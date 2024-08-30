@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sorting Visualizer</h1>
+    
+    <div class="container" id="main"></div>
+
+    <hr>
+    
+    <div class="sliders">
+        <div class="sizeslide">
+            Size <input type="range" min="1" max="50" value="15" class="slider" id="size">
+        </div>
+        <div class="speedslide">
+            Speed <input type="range" min="100" max="600" value="500" class="slider" id="speed">
+        </div>
+    </div>
+    
+    <div class="buttons">
+        <select name="typeofsort" id="typeOfSort">
+            <option value="Bubble">Bubble Sort</option>
+            <!-- <option value="Merge">Merge Sort</option> -->
+        <option value="Selection">Selection Sort</option>
+            <option value="Quick">Quick Sort</option>
+        </select>
+        <button onClick="init()">Init</button>
+        <button onClick="play()">Play</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
